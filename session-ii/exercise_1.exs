@@ -1,6 +1,7 @@
 defmodule Fibonacci do
-  def fib(number) when number <= 1, do: number
-
+  def fib(0), do: 0
+  def fib(1), do: 1
+  
   def fib(number) do
     fib(number - 1) + fib(number - 2)
   end
